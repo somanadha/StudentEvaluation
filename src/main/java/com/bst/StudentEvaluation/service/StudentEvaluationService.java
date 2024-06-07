@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 import com.bst.StudentEvaluation.repository.StudentEvaluationRepository;
 
+import java.net.SocketOption;
 import java.util.Optional;
 
 @Service
@@ -27,6 +28,7 @@ public class StudentEvaluationService {
         Optional<StudentEvaluation> optionalStudentEvaluation = repository.findById(studentId);
         StudentEvaluation studentEvaluation = optionalStudentEvaluation.get();
         studentEvaluation.setTotalMarks(marks);
+        repository.save(studentEvaluation);
         return studentEvaluation;
     }
 

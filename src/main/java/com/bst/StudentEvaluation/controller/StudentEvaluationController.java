@@ -30,8 +30,8 @@ public class StudentEvaluationController {
 
 
     @PatchMapping("StudentEvaluation")
-    public StudentEvaluation updateStudentEvaluation(int studentId, int marks){
-        return service.updateStudentEvaluation(studentId, marks);
+    public StudentEvaluation updateStudentEvaluation(int studentId, int totalMarks){
+        return service.updateStudentEvaluation(studentId, totalMarks);
     }
 
     @DeleteMapping("StudentEvaluation")
