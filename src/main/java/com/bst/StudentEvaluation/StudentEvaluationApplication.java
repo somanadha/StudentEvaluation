@@ -9,8 +9,6 @@ public class StudentEvaluationApplication {
 
 	public static void main(String[] args) {
 		var context = SpringApplication.run(StudentEvaluationApplication.class, args);
-
-		StudentEvaluation marks = context.getBean(StudentEvaluation.class);
 		System.out.println("Hello World !");
 	}
 }

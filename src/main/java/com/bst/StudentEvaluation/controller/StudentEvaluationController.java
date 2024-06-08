@@ -28,7 +28,6 @@ public class StudentEvaluationController {
         return service.getStudentEvaluation(studentId);
     }
 
-
     @PatchMapping("StudentEvaluation")
     public StudentEvaluation updateStudentEvaluation(int studentId, int totalMarks){
         return service.updateStudentEvaluation(studentId, totalMarks);
